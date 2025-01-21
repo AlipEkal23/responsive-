@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .zoomable {
+            transition: transform 0.3s;
+        }
+        .zoomable:hover {
+            transform: scale(1.1);
+        }
+        #infoBox {
+            display: none; /* Initially hide the info box */
+            background: rgba(255, 255, 255, 0.9); /* Light background */
+            padding: 20px; /* Padding inside the box */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+            margin-top: 10px; /* Space above the box */
+            color: #333; /* Text color */
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen relative overflow-hidden">
+    <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover z-0">
+        <source src="https://motionbgs.com/media/128/itachi-uchiha.960x540.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="text-center relative z-10">
+        <h1 class="text-4xl font-bold mb-8 text-white">Server Joki/Script roblox</h1>
+        <button id="infoButton" class="bg-blue-500 text-white font-bold py-2 px-4 rounded-full shadow-lg transform transition-transform duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-300">
+            <i class="fas fa-thumbs-up mr-2"></i> Click Me!
+        </button>
+        <div id="infoBox" class="info-box mt-4">
+            <p>𝗸𝗮𝗹𝗮𝘂 𝗺𝗮𝘂 𝗶𝗻𝗳𝗼 𝗹𝗮𝗴𝗶 𝘁𝗲𝗻𝘁𝗮𝗻𝗴 𝘀𝗰𝗿𝗶𝗽𝘁 𝗿𝗼𝗯𝗹𝗼𝘅 𝗮𝘁𝗮𝘂 𝗷𝗼𝗸𝗶, 𝗯𝗶𝘀𝗮 𝗰𝗹𝗶𝗰𝗸 𝘆𝗮𝗻𝗴 𝗹𝗼𝗴𝗼 𝗽𝗲𝗿𝘁𝗮𝗺𝗮</p>
+        </div>
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <a href="https://discord.gg/DGhJkRmZyD" target="_blank">
+                <img alt="A placeholder image of a person smiling" class="rounded-full shadow-lg mx-auto zoomable" height="300" src="https://cdn.discordapp.com/icons/1084292065111842926/2df7b87182585795d38b6a17640eac54.png?size=4096" width="300"/>
+            </a>
+            <a href="https://discord.gg/isnahamzah" target="_blank">
+                <img alt="A placeholder image of a person smiling" class="rounded-full shadow-lg mx-auto zoomable" height="300" src="https://yt3.googleusercontent.com/SN-IlxSlqsd_a5DzW9uMZgeDGGxFIRKzKJtSuULJw6vzoZOK-1PXEVoZezgLUs_nAJOlEN9hZw=s160-c-k-c0x00ffffff-no-rj" width="300"/>
+            </a>
+            <a href="https://robloxscripts.net/" target="_blank">
+                <img alt="A placeholder image of a person smiling" class="rounded-full shadow-lg mx-auto zoomable" height="300" src="https://media.tenor.com/VSdPK_SEMuUAAAAj/roblox-scripts-roblox.gif" width="300"/>
+            </a>
+        </div>
+    </div>
+    <script>
+        document.getElementById('infoButton').addEventListener('click', function() {
+            var infoBox = document.getElementById('infoBox');
+            if (infoBox.style.display === 'none' || infoBox.style.display === '') {
+                infoBox.style.display = 'block';
+            } else {
+                infoBox.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
